@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>WEB222 assignment5 Hyunji Cho 128065182 - Registration</title>
+        <link rel="stylesheet" href="normalize1.css"/>
+        <script src=registration.js></script>
+        <link href="https://fonts.googleapis.com/css?family=Amaranth&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fascinate&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="box">
+
+            <header>
+                <a href="index.html"><img src="Doraemon.jpg" alt="logo" width="200" height="200"></a>
+                <h1 class="web-title">Doraemon!</h1>
+            </header>
+
+            <nav>
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="index.html">Main</a></li>
+                    <li><a href="registration.html">Register</a></li>
+                </ul>
+            </nav>
+
+            <section id="registration">
+                
+                <form id="signup" name="signup" method="post" action="https://httpbin.org/post" onsubmit="return formValidation();">
+
+                    <h1>Register</h1>
+                    <h3>Username and Password</h3>
+                    
+                    <label for="username">Username : </label>
+                    <input type="text" name="username" id="username" required="required" onchange="validateUsername()"/><br>
+
+                    <label for="password">Password : </label>
+                    <input type="password" name="password" id="password" required="required" onchange="validatePassword()"/>
+
+                    <label for="rePassword">Retype Password : </label>
+                    <input type="password" name="rePassword" id="rePassword" required="required" onchange="validateRePassword()"/><br><br>
+
+                    <h3>Personal Information</h3>
+
+                    <label for="fName">First Name : </label>
+                    <input type="text" name="fName" id="fName" required="required" onchange="validatefName()"/><br>
+
+                    <label for="lName">Last Name : </label>
+                    <input type="text" name="lName" id="lName" required="required" onchange="validatelName()"/><br><br>
+                    
+                    <label for="email">Email : </label>
+                    <input type="email" name="email" id="email" required="required"/><br>
+                    
+                    <label for="phone">Phone : </label>
+                    <input type="tel" name="phone" id="phone" required="required" onchange="validatePhone()"/><br><br>
+                    
+                    <label for="unit">Unit # : </label>
+                    <input type="text" name="unit" id="unit"/><br>
+                    
+                    <label for="streetNum">Street # : </label>
+                    <input type="text" name="streetNum" id="streetNum" required="required"/><br>
+
+                    <label for="street">Street : </label>
+                    <input type="text" name="street" id="street" required="required" onchange="validateStreet()"/><br><br>
+                
+                    <label for="pCode">Postal Code : </label>
+                    <input type="text" name="pCode" id="pCode" required="required" onchange="validatePostal()"/><br><br>
+ 
+                    <label for="city">City : </label>
+                    <input type="text" name="city" id="city" required="required" onchange="validateCity()"/><br>
+
+                    <label for="prov">Province : </label>
+                    <input type="text" list="provinces" name="prov" id="prov" required="required" />
+                    <datalist id="provinces">
+                        <option value="ON Ontario">
+                        <option value="QC Quebec">
+                        <option value="NS Nova Scotia">
+                        <option value="NB New Brunswick">
+                        <option value="MB Manitoba">
+                        <option value="BC British Columbia">
+                        <option value="PE Prince Edward Island">
+                        <option value="SK Saskatchewan">
+                        <option value="AB Alberta">
+                        <option value="NL Newfoundland and Labrador">
+                    </datalist><br>
+
+                    <input type="hidden" name="lastName" id="lastName" value="Cho"/>
+                    <input type="hidden" name="studentId" id="studentId" value="128065182"/>
+
+                    <p>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Clear" onclick="clearErrors()">
+                    </p>
+
+                </form>
+            </section>
+
+            <aside>
+                <h2>Errors</h2>
+                <div id="userError"></div>
+                <div id="passError"></div>
+                <div id="rePassError"></div>
+                <div id="fNameError"></div>
+                <div id="lNameError"></div>
+                <div id="phoneError"></div>
+                <div id="streetError"></div>
+                <div id="pCodeError"></div>
+                <div id="cityError"></div>
+            </aside>
+
+            <footer>
+                &copy; 2019 Hyunji Cho
+            </footer>
+
+        </div>
+
+    </body>
+
+</html>

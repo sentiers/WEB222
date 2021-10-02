@@ -1,0 +1,140 @@
+/********************************************************************************* 
+* 
+* WEB222 – Assignment #4b 
+* 
+* I declare that this assignment is my own work in accordance with Seneca 
+* Academic Policy. No part of this assignment has been copied manually or 
+* electronically from any other source (including web sites) or distributed to 
+* other students. 
+* 
+* Name: Hyunji Cho Student ID: 128065182 Date: 2019-07-22
+* 
+********************************************************************************/
+
+/* Select class “main-container” 
+    -> adjust max-width and margins */
+.main-container 
+{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Select all <nav> elements that are inside of class “main-container” 
+    -> adjust width and position */
+.main-container nav 
+{
+    width: 30%;
+    float: left;
+}
+
+/* Select class ".main" that is inside of class “main-container” 
+    -> adjust width and position */
+.main-container .main 
+{
+    width: 70%;
+    float: right;
+}
+
+/* Select all <header> elements that are inside of class “main-container” 
+    -> adjust padding, background-color, border and margin */
+.main-container header 
+{
+    padding: 10px;
+    background-color: #eeeeee;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 30px;
+}
+
+/* Select all <h1> elements that are inside <header> elements which are inside of class "main-container" 
+    -> adjust width, font size, position, text position and margin */ 
+.main-container header h1 
+{
+    width: 70%;
+    font-size: 24px;
+    float: right;
+    text-align: right;
+    margin-top: 10px;
+}
+
+/* Select all <footer> elements that are inside of class “main-container”
+    -> adjust position, padding, background-color, border and font-size */
+.main-container footer 
+{
+    clear: both;
+    padding: 20px 10px;
+    background-color: #eeeeee;
+    border-top: 1px solid #cccccc;
+    font-size: 13px;
+}
+
+/* Select id “logo”
+    -> adjust width, font-size and font-weight */
+#logo 
+{
+    width: 30%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Select all <img> elements that are inside of id “logo”
+    -> adjust width and position */
+#logo img 
+{
+    width: 94px;
+    vertical-align: middle;
+}
+
+/* Select all <ul> elements that are inside of <nav> elements
+    -> remove the list-style of elements */
+nav ul 
+{
+    list-style-type: none;
+}
+
+/* Select all <a> elements that are inside <ul> elements which are inside of <nav> elements
+    -> render the link as a block-level and remove text-decoration and adjust padding */
+nav ul a 
+{
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+}
+
+/* Select all <div> elements that are inside of class "province"
+    -> adjust width and height, position and margin */
+div.province 
+{
+    width: 30%;
+    float: left;
+    margin: 8px;
+    height: 310px;
+}
+
+/* Select all class "description" inside all <div> elements that are inside of class "province" 
+    -> adjust max-height, auto/hidden scroll bar and margins */
+div.province .description 
+{
+    max-height: 165px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 8px 0;
+}
+
+/* Select all <a> elements inside all <div> elements that are inside of class "province"
+    -> render the link as a block-level and remove text-decoration and adjust text position, background-color, text-color and padding */
+div.province a 
+{
+    display: block;
+    text-align: center;
+    background-color: #555555;
+    color: #eeeeee;
+    text-decoration: none;
+    padding: 5px;
+}
+
+/* Select all <img> elements that are insdie of class "flag" 
+    -> adjust width */
+img.flag 
+{
+    width: 100%;
+}

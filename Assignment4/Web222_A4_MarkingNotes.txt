@@ -1,0 +1,54 @@
+WEB222 - Assignment 4 Marking Notes
+Total out of 20
+(15) Part A  - (4) main.html   (8) a4-main.js  (3) a4-main.css
+(5)  Part B  
+---------------------
+Comments
+---------------------
+
+A4-MAIN.JS
+<li>no comment header in code files.  this is mandatory in all files (-1.0)</li>
+<li>no comment on color choice, lol :)</li>
+
+<li>your page is to display All Pets by default when first loaded (-1.0)</li>
+<li>better spacing within the cells such that the text is not touching the borders would make it more readable (-0.5)</li>
+<li>you were asked to place the table inside a container with a vertical scroll bar, this is missing (-1.0)</li>
+<li>your filtering does not work as requested.  i.e. I click on dogs, and then 1-3 years, I should ONLY see dogs whom are 1-3 years. (-2.0)</li>
+<li>your code does not allow for animals 3.5 years old.  Max 3, then next is Min 4. (-0.5)</li>
+<li>age filtering does not work (-3.0)</li>
+
+<li>you were not supposed to use innerHTML except to clear the contents and output the description fields. (-4.0)</li>
+<li>nice job on the non use of innerHTML.  well done</li>
+
+
+<li>BONUS 2 for OOP programming(+2.0)</li>
+<li>next time consider going against the instructions and combining the functions into more object oriented general functions.  This whole thing can be done with 3 functions. (no mark deduction here, and be careful with other profs not allowing you to go outside instructions)</li>
+<li>a good try on your consolidation of the functions......but a little too long winded with too many repeats in the code. The idea of OOP is to minimize repeated code.<br /> try this.....<br /> <code><span style="font-family: 'courier new', courier;">function setTypeFilter(filter) {<br />    filterType = filter; <br />     if (filter == "All") { <br />          filterType = ""; <br />          filterAgeMin = 0; <br />          filterAgeMax = Number.MAX_VALUE; <br />    } <br />loadTableWithFilters(); <br />} <br /> function setAgeFilters(Mini, Maxi) { <br />    filterAgeMin = Mini; <br />    filterAgeMax = Maxi; <br />    if (Maxi == 99) filterAgeMax = Number.MAX_VALUE; <br />    loadTableWithFilters();<br />} <br />function loadTableWithFilters() {</span> <span style="font-family: 'courier new', courier;">    var tableBodyContainer = document.querySelector("#main-table-body"); <br />    tableBodyContainer.innerHTML = ""; <br />    for (var i = 0; i &lt; petData.length; i++) { <br />        if ((filterType == "" || petData[i].type == filterType) &amp;&amp; (petData[i].age &gt;= filterAgeMin &amp;&amp; petData[i].age &lt; filterAgeMax)) {<br />    }<br />}</span></code></li>
+<li>you hard coded the search results where they are intended to be dynamic.  By looping through all of them and then using a very simple IF statement, you can show just those that are needed.(-4.0)</li>
+
+<h3>Part B - comments</h3>
+<p>your spacing is not set to the full 70% three wide, the last image provided was for using a smaller browser, what it might look like (-1.0)</p>
+<p>your main container is not centered as required (-1.0)</p>
+<p>your flags overlap your menu when you reduce the browser size (-1.0)</p>
+<p>not centered as requested(-1.0)</p>
+<p>the flags were not to wrap under the menu.  they should be contained inside their own box.(-1.0)</p>
+
+
+<h3>WEB222 - Assignment 4 Marking Notes</h3>
+<p><strong>Total out of 20</strong><br />(15) Part A </p>
+<ul>
+<li>(4) main.html   </li>
+<li>(8) a4-main.js </li>
+<li>(3) a4-main.css</li>
+</ul>
+<p>(5)  Part B</p>
+<hr />
+<p><strong>Comments</strong></p>
+<hr />
+<h3>Part A - comments</h3>
+<ul>
+<li>well done!</li>
+
+</ul>
+<h3>Part B - comments</h3>
+<p>well done!</p>

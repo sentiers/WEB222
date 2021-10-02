@@ -1,0 +1,100 @@
+/* Place all of your CSS Code in this file */
+/********************************************************************************* 
+*
+* WEB222 – Assignment #4a
+*
+* I declare that this assignment is my own work in accordance with Seneca 
+* Academic Policy. No part of this assignment has been copied manually or 
+* electronically from any other source (including web sites) or distributed to 
+* other students. 
+* 
+* Name: Hyunji Cho Student ID: 128065182 Date: 2019-07-22
+* 
+********************************************************************************/
+
+body 
+{
+    color: rgb(255, 255, 255);
+    text-align: left;
+    background: rgb(255, 195, 195);
+}
+
+nav
+{
+    padding-bottom: 0px;
+    background: rgb(173, 211, 255);
+    border-color: rgb(255, 255, 255);
+    border-width: 7px;
+}
+
+.center li a 
+{
+    color: rgb(255, 255, 255);
+    font-size: 12pt;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.center li a:hover 
+{
+    color: rgb(79, 155, 255);
+}
+
+footer 
+{
+    margin-top: 20px;
+    color:rgb(255, 255, 255);
+    background: rgb(255, 162, 159);
+    border-color: rgb(255, 162, 159);   
+}
+
+header
+{
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: 0px;
+}
+
+.app-title 
+{ 
+    text-align: center;
+    font-family: 'Bonbon', cursive;
+    font-size: 40pt;
+}
+
+.main-table-container 
+{ 
+    padding: 10px;
+    max-height: 350px;
+    min-height: 350px;
+    overflow-y: scroll;
+    background: rgb(255, 255, 255);
+}
+
+.main-table-top th 
+{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    background-color: rgb(255, 231, 152);
+    color: rgb(255, 255, 255);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+    
+.main-table td 
+{
+    padding: 10px;
+    background: rgb(255, 255, 255);
+    border: 4px solid rgb(255, 237, 132);
+    border-spacing: 10px;
+    color: rgb(255, 203, 34);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    text-align: left;
+}
+    
+.main-table p span 
+    {
+        font-weight: bold;
+        background-color: rgb(255, 250, 182);
+    }
